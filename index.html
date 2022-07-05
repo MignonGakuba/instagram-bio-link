@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.trunk.min.js"></script>
+
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+  VANTA.TRUNK({
+    el: "#vanta",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    spacing: 2.50,
+    chaos: 10.00,
+    backgroundAlpha: 0.0,
+    })
+
+    setTimeout(() => {
+      const main = document.querySelector('main')
+      main.style.opacity = 1
+      main.style.filter = 'blur(0px)'
+    }, 1000)
+
+})
+</script>
+    <title>Mignon Gakuba - links</title>
+  </head>
+  <body>
+    <div id="vanta">
+    <main class="animated">
+      <header>
+        <img src="./images/pic3.jpg">
+         <h1>@mignongakuba</h1>
+      </header>
+      <ul>
+        <li>
+          <a href=""> 
+            <img src="./images/homepage.svg" alt="Homepage" width="20px">
+            Official website 
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/MignonGakuba">
+            <img src="./images/github.svg" alt="GitHub" width="20px">
+            Github 
+          </a>
+        </li>
+        <li>
+          <a href=""> 
+            <img src="./images/twitter.svg" alt="Twitter" width="20px">
+            Twitter 
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCgC5yEhIxRPiOxiNa20el2A">
+            <img src="./images/youtube.svg" alt="Youtube" width="20px">
+            Youtube 
+          </a>
+        </li>
+      </ul>
+    </main>
+  </div>
+  </body>
+</html>
